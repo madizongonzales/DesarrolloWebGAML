@@ -1,0 +1,50 @@
+
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        width: 500px;
+        border: 3px solid palevioletred;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    .resaltado{
+        font-weight: bolder;
+        color: blueviolet;
+        display: inline;
+        /* visibility: hidden; */
+        }
+    .direccion{
+        display: flex;
+        flex-flow: row-reverse;
+        width: 500px;
+        border: 3px solid palevioletred;
+        color:brown;
+        justify-content: space-evenly;
+    }
+    .flexs{
+        display: flex;
+        flex-flow: row-reverse;
+        width: 500px;
+        border: 5px solid palevioletred;
+        color:brown;
+        justify-content: flex-start;
+    }
+    .flexe{
+        display: flex;
+        flex-flow: row-reverse;
+        width: 500px;
+        border: 5px solid palevioletred;
+        color:brown;
+        justify-content: flex-end;
+    }
+    .familia{
+        display: flex;
+        flex-flow: column-reverse;
+        background-color: cornsilk;  
+        width: 500px;
+        border: 5px solid palevioletred;
+        color:brown;
+        padding: 10px 3px 10px 10px; 
+        justify-content: space-evenly;
+    }
