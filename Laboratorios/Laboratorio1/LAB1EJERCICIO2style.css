@@ -1,0 +1,117 @@
+
+header{
+    background-color: palevioletred;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 1090px;
+}
+footer{
+    background-color: lightslategray;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 1090px;
+}
+.menu{
+    width: 1110px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* border: 1px solid black; */
+    display: flex;
+    background-color: aquamarine;
+}
+.menuleft{
+    width: 700px;
+    height: 38px;
+color:white;
+    display: flex;
+    padding: 10px 1px 1px 1px;
+text-align: left;
+}
+.menuright{
+    width: 200px;
+    height: 38px;
+color: white;
+display: flex;
+padding: 10px 1px 1px 1px;
+text-align: right;
+}
+.columnas{
+    width: 1110px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* border: 1px solid black; */
+    /* display: flex; */
+    padding-bottom: 1220px;
+
+}
+.columna1 {
+    width: 400px;
+    /* height: 700px; */
+    float: left;
+    padding-bottom: 20px;
+
+
+}
+.col1cuad1{
+    width: 400px;
+    height: 400px;
+    float: left;
+    background-color: rgb(161, 167, 172);
+    text-align: center;
+
+}
+.columna2 {
+    width: 700px;
+    float: right;
+    height: 700px;
+    padding-bottom: 20px;
+}
+.col1cuad2{
+    width: 400px;
+    height: 200px;
+    float: left;
+    background-color:rgb(161, 167, 172);
+    text-align: center;
+}
+.col1cuad3{
+    width: 400px;
+    height: 200px;
+    float: left;
+    background-color:rgb(161, 167, 172);
+    text-align: center;
+
+}
+.col1cuad4{
+    width: 400px;
+    height: 200px;
+    float: left;
+    background-color: rgb(161, 167, 172);
+    text-align: center;
+}
+
+.columna2 {
+    width: 668px;
+    /* height: 1000px; */
+    /* float: left; */
+    display: flex;
+}
+.col2cuad1{
+    width: 668px;
+    height: 200px;
+    float: left;
+    background-color: rgb(161, 167, 172);
+    text-align: center;
+}
+.col2cuad2{
+    width: 668px;
+    height: 200px;
+    float: left;
+    background-color: rgb(161, 167, 172);
+    text-align: center;
+}
