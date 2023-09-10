@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+}
+
+.menu{
+    width: 40%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #4d82bc;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+
+}
+.menu_item{
+    width: 200px;
+    height: 30px;
+    background-color: #c4dafa;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid black;
+    margin: 0 10px;
+}
