@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <h1>Conversión de Unidades</h1>
+    <form action="LAB2EJERCICIO1.php" method="get">
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" required><br><br>
+
+        <label for="unidad_medida">Unidad de Medida:</label>
+        <select id="unidad_medida" name="unidad_medida">
+            <option value="milimetro">Milímetro</option>
+            <option value="centimetro">Centímetro</option>
+            <option value="decimetro">Decímetro</option>
+            <option value="metro">Metro</option>
+            <option value="kilometro">Kilómetro</option>
+        </select>
+        <br>
+        <br>
+        <label for="unidad_destino">Unidad de destino:</label>
+        <select id="unidad_destino" name="unidad_destino">
+            <option value="milimetro">Milímetro</option>
+            <option value="centimetro">Centímetro</option>
+            <option value="decimetro">Decímetro</option>
+            <option value="metro">Metro</option>
+            <option value="kilometro">Kilómetro</option>
+        </select><br><br>
+
+        <input type="submit" value="Convertir">
+    </form>
+
+</body>
+</html>
