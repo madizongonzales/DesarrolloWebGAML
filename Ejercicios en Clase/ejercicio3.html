@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function determinarParOImpar(numero) {
+        if (numero % 2 === 0) {
+          return "par";
+        } else {
+          return "impar";
+        }
+      }
+
+      var numeroUsuario = parseInt(prompt("Ingrese un número entero:"));
+      var resultado = determinarParOImpar(numeroUsuario);
+
+      alert("El número " + numeroUsuario + " es " + resultado + ".");
+    </script>
+  </body>
+</html>

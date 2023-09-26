@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function esPalindromo(cadena) {
+        var cadenaLimpia = "";
+        for (var i = 0; i < cadena.length; i++) {
+          if (cadena[i] !== " ") {
+            cadenaLimpia += cadena[i];
+          }
+        }
+
+        var cadenaInvertida = "";
+        for (var j = cadenaLimpia.length - 1; j >= 0; j--) {
+          cadenaInvertida += cadenaLimpia[j];
+        }
+
+        return cadenaLimpia === cadenaInvertida;
+      }
+
+      var textoUsuario = prompt(
+        "Ingrese una cadena de texto para verificar si es un palíndromo:"
+      );
+
+      if (esPalindromo(textoUsuario)) {
+        alert('La cadena "' + textoUsuario + '" es un palíndromo.');
+      } else {
+        alert('La cadena "' + textoUsuario + '" no es un palíndromo.');
+      }
+    </script>
+  </body>
+</html>

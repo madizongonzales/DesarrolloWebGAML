@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var a = parseFloat(prompt("Ingrese el primer número:"));
+      var b = parseFloat(prompt("Ingrese el segundo número:"));
+      var c = parseFloat(prompt("Ingrese el tercer número:"));
+
+      var mayor = a;
+
+      if (b > mayor) {
+        mayor = b;
+      }
+
+      if (c > mayor) {
+        mayor = c;
+      }
+
+      var menor = a;
+
+      if (b < menor) {
+        menor = b;
+      }
+
+      if (c < menor) {
+        menor = c;
+      }
+
+      alert("El mayor número es: " + mayor);
+      alert("El menor número es: " + menor);
+    </script>
+  </body>
+</html>
