@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form action="" method="POST">
+      <div>
+        <input type="number" name="a" id="a" />
+
+        <input type="number" name="b" id="b" />
+
+        <input type="number" name="c" id="c" />
+      </div>
+      <input type="button" value="Calcular" onclick="calcularmayor()" />
+    </form>
+
+    <script>
+      function calcularmayor() {
+        var a = parseFloat(document.getElementById("a").value);
+        var b = parseFloat(document.getElementById("b").value);
+        var c = parseFloat(document.getElementById("c").value);
+        
+        document.getElementById("a").style.backgroundColor = "white";
+        document.getElementById("b").style.backgroundColor = "white";
+        document.getElementById("c").style.backgroundColor = "white";
+
+        if (a > b && a > c) {
+          document.getElementById("a").style.backgroundColor = "red";
+        } 
+        if (b > a && b > c) {
+          document.getElementById("b").style.backgroundColor = "red";
+        } 
+        if (c > a && c > b) {	
+          document.getElementById("c").style.backgroundColor = "red";
+        }
+      }
+    </script>
+  </body>
+</html>
