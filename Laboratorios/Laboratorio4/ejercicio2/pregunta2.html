@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Agrandar y Reducir Imagen</title>
+    <style>
+        #container {
+            text-align: center;
+        }
+
+        #img{
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="img">
+            <img id="my-image" src="imagen.png">
+        </div>
+        <br>
+        <button onclick="agrandarImagen()">Agrandar</button>
+        <button onclick="reducirImagen()">Reducir</button>
+        <input type="number" id="cantidad">
+    </div>
+
+
+</body>
+<script>
+    function agrandarImagen() {
+  var cantidad = parseInt(document.getElementById("cantidad").value);
+  var imagen = document.getElementById("my-image");
+  var width = imagen.clientWidth;
+  imagen.style.width = (width + cantidad) + "px";
+}
+
+function reducirImagen() {
+  var cantidad = parseInt(document.getElementById("cantidad").value);
+  var imagen = document.getElementById("my-image");
+  var width = imagen.clientWidth;
+  imagen.style.width = (width - cantidad) + "px";
+}
+
+</script>
+</html>

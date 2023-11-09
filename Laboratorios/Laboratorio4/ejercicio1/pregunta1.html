@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    th {
+        background-color: aqua;
+
+    }
+    th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+
+    </style>
+</head>
+<body>
+    <button id="mostrarButton">Mostrar</button>
+    <div id="lista"></div>
+
+    <script>
+        document.getElementById("mostrarButton").addEventListener("click", () => {
+            fetch("lista.php")
+                .then(response => response.json())
+                .then(data => {
+                    const listaDiv = document.getElementById("lista");
+                    listaDiv.innerHTML = "";
+
+                    const table = document.createElement("table");
+                    const thead = document.createElement("thead");
+                    const tbody = document.createElement("tbody");
+
+                    const headers = ["Nro", "Apellidos", "Nombres", "Edad", "Materia", "Nota"];
+                    const headerRow = document.createElement("tr");
+                    headers.forEach(headerText => {
+                        const th = document.createElement("th");
+                        th.textContent = headerText;
+                        headerRow.appendChild(th);
+                    });
+                    thead.appendChild(headerRow);
+                    table.appendChild(thead);
+
+                    data.forEach(item => {
+                        const row = document.createElement("tr");
+                        headers.forEach(headerText => {
+                            const cell = document.createElement("td");
+                            cell.textContent = item[headerText];
+                            row.appendChild(cell);
+                        });
+                        tbody.appendChild(row);
+                    });
+                    table.appendChild(tbody);
+
+                    listaDiv.appendChild(table);
+                });
+        });
+    </script>
+</body>
+</html>
