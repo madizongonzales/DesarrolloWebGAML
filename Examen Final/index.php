@@ -46,7 +46,7 @@
                     <div >
                         <div><h3>Gonzales Arancibia Madizon Lauren</h3></div>
                         <div class="datos"><h5>Carrera: Ingeniería de Sistemas</h5></div>
-                        <div class="datos"><h5> Repostorio Examen: <a href="">madizonlgonzales</a></h5></div>
+                        <div class="datos"><h5> Repostorio Examen: <a href="https://github.com/madizongonzales/DesarrolloWebGAML/tree/main/Examen%20Final">Examen Final @madizongonzales</a></h5></div>
                     </div>
                 </div>
             </div>
