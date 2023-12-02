@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 900px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.logo{
+    display: block;
+    width: 12%;
+}
+
+.header-sec{
+    display: flex;
+    width: 88%;
+    flex-direction: column;
+}
+
+.navbar{
+    display: flex;
+    border-bottom: 1px dotted black;
+    min-height: 30px;
+    background-color: rgb(215, 209, 209);
+}
+
+.button{
+    padding: 15px 0;
+    width: 20%;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#titulo{
+    padding: 16px 0;
+    width: 100%;
+    border-bottom: 1px dotted black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+}
+
+#menu{
+    width: 12%;
+    border-right: 1px solid black;
+}
+
+
+#contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88%;
+}
+
+.menu_titulo{
+    width: 100%;
+    background-color: rgb(215, 209, 209);
+    color: gray;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.asignatura{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.asignatura:hover{
+    background-color: rgb(215, 209, 209);
+    color: gray;
+    cursor: pointer;
+}
+
+.selected{
+    background-color: rgb(215, 209, 209);
+    color: gray;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    width: 60%;
+    border: 2px solid black;
+}
+
+.semestre{
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.informes{
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    margin: 10px;
+}

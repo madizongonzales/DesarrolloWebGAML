@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/universidad.png" class="logo">
+            <div class="header-sec">
+                <div class="navbar">
+                    <div class="button" onclick="inicio()">Inicio</div>
+                    <div class="button" onclick="pregunta2()">Lista</div>
+                    <div class="button" onclick="pregunta3()">Horarios</div>
+                    <div class="button" onclick="pregunta4()">Calificaciones</div>
+                    <div class="button" onclick="pregunta5()" style="border: 0;">Informes</div>
+                </div>
+                <div id="titulo">
+                    Inicio
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div id="menu">
+                <div class="menu_titulo">
+                    Asignaturas
+                </div>
+                <div class="asignatura selected">SIS256</div>
+                <div class="asignatura">SIS258</div>
+                <div class="asignatura">SIS406</div>
+            </div>
+            <div id="contenido">
+                <div class="card">
+                    <div>Examen Final de SIS 256</div>
+                    <div>Estudiante: Pimentel Vito</div>
+                    <div>CU: 111-318</div>
+                    <div>Semeste: <span class="semestre">2/2023</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

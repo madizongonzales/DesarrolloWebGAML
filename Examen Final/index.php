@@ -1,3 +1,8 @@
+<?php
+include ('connection.php');
+session_start();
+$usuario=$_SESSION['usuario'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +21,7 @@
     </div>
     <div class="ader">
         <div id="menu">
-            <div class="button-1" onclick="pregunta1()">Pregunta 1</div>
+            <div class="button-1">Pregunta 1</div>
             <div class="button-1" onclick="pregunta2()">Pregunta 2</div>
             <div class="button-1" onclick="pregunta3()">Pregunta 3</div>
             <div class="button-1" onclick="pregunta4()">Pregunta 4</div>
@@ -30,9 +35,12 @@
 
         <div class="contenido">
             <div id="sub-menu">
-                <div class="opciones">Opciones</div>
-                <div class="detalle">Detalle 1</div>
-                <div class="detalle">Detalle 2</div>
+                <div class="menu_titulo">
+                    Asignaturas
+                </div>
+                <div class="asignatura selected">SIS256</div>
+                <div class="asignatura">SIS258</div>
+                <div class="asignatura">SIS406</div>
             </div>
             <div id="contenido">
                 <div class="info">

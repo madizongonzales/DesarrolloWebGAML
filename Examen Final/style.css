@@ -96,19 +96,23 @@
     align-items: center;
     color: black;
 }
-.opciones{
+.menu_titulo{
     width: 100px;
     height: 25px;
     background-color: #cd6a2e;
     color: white;
     text-align: center;
 }
-.detalle{
+.asignatura {
     width: 100px;
     height: 25px;
     border: 1px solid orange;
     color: rgb(152, 151, 151);
 text-align: center;
+}
+.selected{
+    background-color: rgb(215, 209, 209);
+    color: gray;
 }
 #pie{
     width: 100%;
